@@ -1,24 +1,18 @@
-body {
-    margin: 10px;
-    padding: 10px;
+.root {
+    --bg-color: #0c181f;
+    --bx-default: #1a242a;
+    --bx-hover: #8c0303;
+    --bx-resposta: #1a242a;
+    --bx-error: ##c81e43;
+    --bttn-color: #83293c;
 }
 
-.quadrados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    color: white;
-    background-color: rgb(140, 3, 3);
-
-    height: 100px;
-    width: 100px;
-}
 
 header {
+    background-color: var(--bg-color);
+    
     padding-top: 50px;
     text-align: center;
-    background-color: grey;
     font-size: 20px;
     font-weight: bold;
     width: 100%;
@@ -27,14 +21,38 @@ header {
 
 main {
     display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-    width: 600px;
+    justify-content: center;
 }
 
+#container-main {
+    display: flex;
+}
+
+.box {
+    /* background-color: var(--bx-default); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    color: white;
+
+    height: 100px;
+    width: 100px;
+
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: var(--bx-hover);
+
+    margin: 1px;
+    transition: 100ms;
+}
 
 footer {
-    background-color: grey;
+    background-color: var(--bg-color);
+
     width: 100%;
     height: 100px;
     text-align: center;
