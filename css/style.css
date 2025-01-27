@@ -52,7 +52,13 @@ main {
 }
 
 #container-main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajusta automaticamente os blocos */
+    grid-gap: 10px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    /* não sei o que to fazendo aqui */
 }
 
 .box {
