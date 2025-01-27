@@ -1,9 +1,9 @@
-.root {
+:root {
     --bg-color: #0c181f;
     --bx-default: #1a242a;
     --bx-hover: #8c0303;
     --bx-resposta: #1a242a;
-    --bx-error: ##c81e43;
+    --bx-error: #c81e43;
     --bttn-color: #83293c;
 }
 
@@ -29,7 +29,7 @@ main {
 }
 
 .box {
-    /* background-color: var(--bx-default); */
+    background-color: var(--bx-default);
 
     display: flex;
     justify-content: center;
