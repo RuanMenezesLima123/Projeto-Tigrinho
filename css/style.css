@@ -9,8 +9,6 @@
     --bx-error: #c81e43;
     --bttn-color: #c81e43;
     --bttn-hover: #850b25;
-    --input-color: #f0f6fc;
-    --input-hover: #bbbbbb;
 }
 
 body {
@@ -50,22 +48,6 @@ header {
     transition: 500ms;
 }
 
-.input-style {
-    background-color: var(--input-color);
-    color: black;
-
-    border: none;
-    border-radius: 6px;
-
-    cursor: pointer;
-}
-
-.input-style:hover {
-    background-color: var(--input-hover);
-    border: none;
-    transition: 500ms;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -78,7 +60,6 @@ main {
     width: 20%;
     position: relative;
     overflow: hidden;
-    /* não sei o que to fazendo aqui */
 }
 
 .box {
@@ -117,6 +98,6 @@ footer {
     font-size: 20px;
 }
 
-.spanEColor {
+#spanErro, #contaErros{
     color: var(--bttn-color);
 }
