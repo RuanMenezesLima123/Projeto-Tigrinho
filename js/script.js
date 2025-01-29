@@ -8,35 +8,28 @@ function gerarQuadrados() {
 
     cont = 0;
     
-    container.innerHTML = ""; 
-    // o que essa linha tá fazendo???
+    container.innerHTML = "";
 
     for (let i = 1; i <= input; i++) {
-        var box = document.createElement("div");
+        for (let k = 1; k <= 3; k++) {
+            var box = document.createElement("div");
 
-        box.setAttribute("class", "box");
-        box.setAttribute("id", "bx" + i);
+            box.setAttribute("class", "box");
+            box.setAttribute("id", "bx" + i);
 
-        box.addEventListener("click", AlterarBox);
-        //opção de tornar função anônima
+            box.addEventListener("click", AlterarBox);
+            //opção de tornar função anônima
 
-        box.innerHTML = i;
+            box.innerHTML = i;
+            // essa atribuição tá quebrando o id de cada box
 
-        container.appendChild(box);
+            container.appendChild(box);
+        }
+
     }
 
     bxS = Math.floor(Math.random() * input) + 1;
 
-    //fiz pra ser de acordo com a quantidade
-    if (input > 0 && input <= 10)  {
-        setTimeout(function () {
-            for (let i = 1; i <= input; i++) {
-                var elemento = document.getElementById("bx" + i);
-                if (elemento) elemento.remove();
-                //esse if nao precisava mas achei legal implementar ele. Ele testa se o elemento existe ai se sim ele o apaga
-            }
-        }, 10000); //tempo em milesimos
-    } 
 }
 
 function AlterarBox() {

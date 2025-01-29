@@ -9,6 +9,8 @@
     --bx-error: #c81e43;
     --bttn-color: #c81e43;
     --bttn-hover: #850b25;
+    --input-color: #f0f6fc;
+    --input-hover: #bbbbbb;
 }
 
 body {
@@ -45,6 +47,22 @@ header {
 .bttn-style:hover {
     background-color: var(--bttn-hover);
     color: #b8bcc0;
+    transition: 500ms;
+}
+
+.input-style {
+    background-color: var(--input-color);
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.input-style:hover {
+    background-color: var(--input-hover);
+    border: none;
     transition: 500ms;
 }
 
