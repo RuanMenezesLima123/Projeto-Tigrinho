@@ -22,7 +22,7 @@ function gerarQuadrados() {
             // aqui eu crio uma unidade de quadrado (div)
 
             box.setAttribute("class", "box");
-            box.setAttribute("id", idElement);
+            box.setAttribute("id", "bx" + idElement);
 
             box.addEventListener("click", alterarBox);
             //opção de tornar função anônima
@@ -51,7 +51,7 @@ function alterarBox() {
 
     this.style.backgroundColor = "red";
 
-    var guardaID = this.getAttribute("id");
+    var guardaID = this.getAttribute("id", "bx");
 
     if (guardaID == "bx" + bxS) {
         alert("🚀 Você acertou 🚀");
