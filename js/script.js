@@ -10,20 +10,23 @@ function gerarQuadrados() {
     
     container.innerHTML = "";
 
+    var idElement = 1;
+
     for (let i = 1; i <= input; i++) {
         for (let k = 1; k <= 3; k++) {
             var box = document.createElement("div");
 
             box.setAttribute("class", "box");
-            box.setAttribute("id", "bx" + i);
+            box.setAttribute("id", idElement);
 
             box.addEventListener("click", AlterarBox);
             //opção de tornar função anônima
 
-            box.innerHTML = i;
+            box.innerHTML = idElement;
             // essa atribuição tá quebrando o id de cada box
 
             container.appendChild(box);
+            idElement++;
         }
 
     }
