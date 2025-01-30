@@ -41,7 +41,7 @@ function gerarQuadrados() {
         spanContaErros.innerHTML = bxS;
         bxS = Math.floor(Math.random() * input) + 1;
         console.log(bxS);
-    }, 5000);
+    }, 15000);
 
 }
 
